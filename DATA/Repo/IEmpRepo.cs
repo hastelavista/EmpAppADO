@@ -10,7 +10,6 @@ namespace DATA.Repo
         Task<Employee> GetEmployeeByIdAsync(int id);
         Task<List<Experience>> GetExperiencesByEmployeeIdAsync(int id);
         Task<DataTable> GeEmployeeList();
-        Task<DataSet> GetExperiencesByEmployeeId(int id);
         Task<int> InsertNewEmpExp(Employee employee, List<Experience> experiences);
         //update on same exp id
         Task UpdateEmployeeWithExperiences(Employee employee, List<Experience> experiences);

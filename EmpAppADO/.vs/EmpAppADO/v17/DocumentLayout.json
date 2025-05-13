@@ -1,12 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nihar\\Desktop\\EmpAppADO\\EmpAppADO\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\EmpAppADO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empappado\\empappado\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DCF8D1-168B-45C8-B3D2-C9809DC55341}|..\\DATA\\DATA.csproj|c:\\users\\nihar\\onedrive\\desktop\\empappado\\data\\repo\\emprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DCF8D1-168B-45C8-B3D2-C9809DC55341}|..\\DATA\\DATA.csproj|c:\\users\\nihar\\onedrive\\desktop\\empappado\\data\\repo\\iemprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmpRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\Repo\\IEmpRepo.cs",
+              "RelativeDocumentMoniker": "..\\DATA\\Repo\\IEmpRepo.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\Repo\\IEmpRepo.cs",
+              "RelativeToolTip": "..\\DATA\\Repo\\IEmpRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:27:42.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\Repo\\EmpRepo.cs",
+              "RelativeDocumentMoniker": "..\\DATA\\Repo\\EmpRepo.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\Repo\\EmpRepo.cs",
+              "RelativeToolTip": "..\\DATA\\Repo\\EmpRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwJIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:27:35.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpController.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\EmpAppADO\\Controllers\\EmpController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpController.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\EmpAppADO\\Controllers\\EmpController.cs",
+              "RelativeToolTip": "Controllers\\EmpController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:15:31.495Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

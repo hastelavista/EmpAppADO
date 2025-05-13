@@ -13,6 +13,8 @@ namespace DATA.Repo
             _db = db;
         }
 
+
+        //for retrieval and display (read)
         public async Task<List<Experience>> GetExperiencesByEmployeeIdAsync(int id)
         {
             string query = "SELECT * FROM Experiences WHERE EmployeeID = @EmployeeID";
@@ -45,14 +47,6 @@ namespace DATA.Repo
                 Contact = row["Contact"].ToString()
             };
         }
-        public async Task<DataSet> GetExperiencesByEmployeeId(int id)
-        {
-            string query = "SELECT * FROM Experiences WHERE EmployeeID = @EmployeeID";
-            var parameters = new[] { new SqlParameter("@EmployeeID", id) };
-            var table = await _db.ExecuteDataSetAsync(query, parameters);
-            return table;
-
-        }
         public async Task<DataTable> GeEmployeeList()
         {
             string query = @" SELECT  e.EmployeeID,  e.Age, e.Name, e.Gender, e.Contact,SUM(exp.Years) AS Years FROM [dbo].[Employees] AS e
@@ -61,6 +55,9 @@ namespace DATA.Repo
             return table;
 
         }
+
+
+        //for C,U,D
         public async Task<int> InsertNewEmpExp(Employee employee, List<Experience> experiences)
         {
             string empInsertQuery = @"INSERT INTO Employees (Name, Age, Gender, Contact)VALUES (@Name, @Age, @Gender, @Contact);

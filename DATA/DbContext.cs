@@ -16,8 +16,7 @@ namespace DATA
         {
             using SqlConnection conn = new(_connectionString);
             using SqlCommand cmd = new (query, conn);
-            if (parameters != null)
-                cmd.Parameters.AddRange(parameters);
+            if (parameters != null)   cmd.Parameters.AddRange(parameters);
             using SqlDataAdapter adapter = new (cmd);
             DataSet dataset = new();
             await Task.Run(() => adapter.Fill(dataset));
@@ -26,8 +25,21 @@ namespace DATA
 
         public async Task<DataTable> ExecuteDataTableAsync(string query, SqlParameter[] parameters = null)
         {
-            var dataset = await ExecuteDataSetAsync(query, parameters);
-            return dataset.Tables.Count > 0 ? dataset.Tables[0] : new DataTable();
+            //var dataset = await ExecuteDataSetAsync(query, parameters);
+            //return dataset.Tables.Count > 0 ? dataset.Tables[0] : new DataTable();
+            using SqlConnection conn = new(_connectionString);
+            using SqlCommand cmd = new(query, conn);
+
+            if (parameters != null)  cmd.Parameters.AddRange(parameters);
+
+            await conn.OpenAsync();
+            using SqlDataReader reader = await cmd.ExecuteReaderAsync();
+
+            DataTable table = new();
+            table.Load(reader);
+            //while (reader.Read())
+            return table;
+
         }
 
         public async Task<object> ExecuteScalarAsync(string query, SqlParameter[] parameters = null)
