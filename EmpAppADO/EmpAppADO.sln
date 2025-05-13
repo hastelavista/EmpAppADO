@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpAppADO", "EmpAppADO.csproj", "{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA", "..\DATA\DATA.csproj", "{46DCF8D1-168B-45C8-B3D2-C9809DC55341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empAPI", "..\empAPI\empAPI.csproj", "{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{46DCF8D1-168B-45C8-B3D2-C9809DC55341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46DCF8D1-168B-45C8-B3D2-C9809DC55341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46DCF8D1-168B-45C8-B3D2-C9809DC55341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,7 +26,7 @@ namespace DATA.Repo
                 EmployeeID = Convert.ToInt32(row["EmployeeID"]),
                 Company = row["Company"].ToString(),
                 Department = row["Department"].ToString(),
-                Years = Convert.ToInt32(row["Years"])
+                Years = row["Years"] != DBNull.Value ? (int?)Convert.ToInt32(row["Years"]) : null
             }).ToList();
         }
         public async Task<Employee> GetEmployeeByIdAsync(int id)

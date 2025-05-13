@@ -1789,11 +1789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\DATA.csproj",
+      "projectUniqueName": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\DATA\\DATA.csproj",
       "projectName": "DATA",
-      "projectPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\DATA.csproj",
+      "projectPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\DATA\\DATA.csproj",
       "packagesPath": "C:\\Users\\nihar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAppADO\\DATA\\obj\\",
+      "outputPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\DATA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

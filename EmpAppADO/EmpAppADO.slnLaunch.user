@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "EmpAppADO.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\empAPI\\empAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

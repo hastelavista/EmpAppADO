@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmpAppADO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15e9ee5343e60960c0e9af99a0d5727d7cc59910")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+791c5c708995f3549eeceb6920f71598f66b8669")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmpAppADO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmpAppADO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
