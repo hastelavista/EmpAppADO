@@ -61,7 +61,7 @@
         }
       }
     },
-    "/api/Emp": {
+    "/api/Emp/add": {
       "post": {
         "tags": [
           "Emp"
@@ -95,8 +95,10 @@
             "description": "OK"
           }
         }
-      },
-      "put": {
+      }
+    },
+    "/api/Emp/update": {
+      "post": {
         "tags": [
           "Emp"
         ],

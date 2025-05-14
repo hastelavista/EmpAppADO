@@ -59,7 +59,7 @@ namespace EmpAppADO.Controllers
 
         }
 
-        [HttpPut("update")]
+        [HttpPost("update")]
         public async Task<IActionResult> UpdateEmpExp([FromBody] EmpExpFormView model)
         {
             if (model == null) return BadRequest("Invalid data.");

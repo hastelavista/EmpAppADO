@@ -1,8 +1,14 @@
 
+using EmpAppADO;
+using EmpAppADO.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpClient<HttpServiceHelper>();
+builder.Services.AddScoped<APICallService>();
 
 builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
 

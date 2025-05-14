@@ -1,38 +1,6 @@
 [
   {
     "ContainingType": "EmpAppADO.Controllers.EmpController",
-    "Method": "InsertNewEmpExp",
-    "RelativePath": "api/Emp",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "EmpAppADO.Models.EmpExpFormView",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmpAppADO.Controllers.EmpController",
-    "Method": "UpdateEmpExp",
-    "RelativePath": "api/Emp",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "EmpAppADO.Models.EmpExpFormView",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmpAppADO.Controllers.EmpController",
     "Method": "GetEmployee",
     "RelativePath": "api/Emp/{id}",
     "HttpMethod": "GET",
@@ -65,12 +33,44 @@
   },
   {
     "ContainingType": "EmpAppADO.Controllers.EmpController",
+    "Method": "InsertNewEmpExp",
+    "RelativePath": "api/Emp/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "EmpAppADO.Models.EmpExpFormView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpAppADO.Controllers.EmpController",
     "Method": "ListEmployees",
     "RelativePath": "api/Emp/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpAppADO.Controllers.EmpController",
+    "Method": "UpdateEmpExp",
+    "RelativePath": "api/Emp/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "EmpAppADO.Models.EmpExpFormView",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

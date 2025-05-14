@@ -136,8 +136,8 @@ function saveEmployeeForm() {
     let isUpdate = employeeData.employee.employeeID && employeeData.employee.employeeID > 0;
 
     $.ajax({
-        url: isUpdate ? "https://localhost:7167/api/Emp/update" : "https://localhost:7167/api/Emp/add",
-        type: isUpdate ? "PUT" : "POST",
+        url: isUpdate ? "EmpView/UpdateEmp" : "/EmpView/AddNewEmp",
+        type: isUpdate ? "POST" : "POST",
         data: JSON.stringify(employeeData),
         contentType: "application/json",
         success: function (response) {

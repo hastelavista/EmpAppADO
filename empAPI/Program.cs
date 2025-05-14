@@ -19,18 +19,18 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<DATA.DbContext>(provider =>
 {
     var config = provider.GetRequiredService<IConfiguration>();
-    return new DATA.DbContext(config);
+    return new DbContext(config);
 });
 builder.Services.AddScoped<IEmpRepo, EmpRepo>();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-        policy =>
-        {
-            policy.WithOrigins("https://localhost:7272").AllowAnyHeader().AllowAnyMethod();
-        });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAll",
+//        policy =>
+//        {
+//            policy.WithOrigins("https://localhost:7272").AllowAnyHeader().AllowAnyMethod();
+//        });
+//});
 
 
 var app = builder.Build();

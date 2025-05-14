@@ -5,11 +5,10 @@ var dataGrid;
 // Load employee list from server
 function loadEmployee(onSuccess) {
     $.ajax({
-        url: 'https://localhost:7167/api/Emp/all',
+        url: '/EmpView/GetAll',
         type: 'GET',
         success: function (res) {
             EmployeeList = res;
-
             // Call onSuccess callback if provided
             if (typeof onSuccess === 'function') {
                 onSuccess();
@@ -63,7 +62,7 @@ function datagridinit() {
                                     renderForm(contentElement);
 
                                     $.ajax({
-                                        url: `https://localhost:7167/api/Emp/${id}`,
+                                        url: `EmpView/GetById/${id}`,
                                         type: 'GET',
                                         success: function (response) {
                                             console.log("RESULT", response);
@@ -83,7 +82,7 @@ function datagridinit() {
                             alertify.confirm("Confirm Deletion", "Are you sure you want to delete this employee?",
                                 function () {
                                     $.ajax({
-                                        url: `https://localhost:7167/api/Emp/${empId}`,
+                                        url: `EmpView/DeleteEmp/${empId}`,
                                         type: 'DELETE',
                                         success: function () {
                                             alertify.success("Employee Deleted");
