@@ -33,8 +33,29 @@ namespace EmpAppADO.UIController
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddNewEmp([FromBody] EmpExpForm model)
-        {
+        public async Task<IActionResult> AddNewEmp( EmpExpForm model)
+         {
+            // Save image to server
+            string? imagePath = null;
+            if (model.ImageFile != null && model.ImageFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var uniqueFileName = Guid.NewGuid() + Path.GetExtension(model.ImageFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await model.ImageFile.CopyToAsync(stream);
+                }
+
+                imagePath = uniqueFileName;
+            }
+
+            model.Employee.ImagePath = imagePath;
+
             var response = await _apiService.AddNewEmpAsync(model);
             return Ok();
         }

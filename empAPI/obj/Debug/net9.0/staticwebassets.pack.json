@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.empAPI.props",
+      "PackagePath": "build\\empAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.empAPI.props",
+      "PackagePath": "buildMultiTargeting\\empAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.empAPI.props",
+      "PackagePath": "buildTransitive\\empAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.empAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.empAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

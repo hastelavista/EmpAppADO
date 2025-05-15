@@ -52,11 +52,8 @@ namespace EmpAppADO.Controllers
         [HttpPost("add")]
         public async Task<IActionResult> InsertNewEmpExp([FromBody] EmpExpFormView model)
         {
-            if (model == null) return BadRequest("Invalid request data.");
-
             int employeeId = await _repo.InsertNewEmpExp(model.Employee, model.Experiences);
             return Ok(new { Message = "Employee inserted successfully.", EmployeeID = employeeId });
-
         }
 
         [HttpPost("update")]
@@ -66,7 +63,6 @@ namespace EmpAppADO.Controllers
 
             await _repo.UpdateEmployeeWithExperiences(model.Employee, model.Experiences);
             return Ok();
-
         }
 
         [HttpDelete("{id}")]

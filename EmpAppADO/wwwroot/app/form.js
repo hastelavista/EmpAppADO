@@ -43,6 +43,24 @@ function renderForm(container) {
             },
             { dataField: "contact" },
             {
+                itemType: "simple",
+                colSpan: 2,
+                label: { text: "Photo" },
+                template: function (data, itemElement) {
+                    $("<div>")
+                        .attr("id", "file-uploader")
+                        .appendTo(itemElement)
+                        .dxFileUploader({
+                            selectButtonText: "Select Photo",
+                            labelText: "",
+                            accept: "image/*",
+                            uploadMode: "useForm",
+                            name: "ImageFile", // This must match your model property
+                            inputAttr: { "aria-label": "Select Photo" }
+                        });
+                }
+            },
+            {
                 itemType: "group",
                 colSpan: 2,
                 caption: "Experiences",
@@ -126,20 +144,43 @@ function renderExperienceGrid() {
 function saveEmployeeForm() {
     const formInstance = $("#employeeForm").dxForm("instance");
     const formData = formInstance.option("formData");
+    console.log("formData", formData);
+    const fileUploader = $("#file-uploader").dxFileUploader("instance");
+    const file = fileUploader.option("value")[0]; 
 
-    const employeeData = {
-        employee: formData,
-        experiences: experienceList
-    };
-    console.log(employeeData);
+    const formPayload = new FormData();
+    //formPayload.append("Employee", JSON.stringify(formData));
+    //formPayload.append("Experiences", JSON.stringify(experienceList));
 
-    let isUpdate = employeeData.employee.employeeID && employeeData.employee.employeeID > 0;
+    Object.keys(formData).forEach(key => {
+        if (formData[key] !== null && formData[key] !== undefined) {
+            formPayload.append(`Employee.${key}`, formData[key]);
+        }
+    });
+
+    experienceList.forEach((exp, index) => {
+        Object.keys(exp).forEach(key => {
+            if (key !== 'id' && exp[key] !== null && exp[key] !== undefined) {
+                formPayload.append(`Experiences[${index}].${key}`, exp[key]);
+            }
+        });
+    });
+
+    if (file) {
+        formPayload.append("ImageFile", file);
+    }
+
+    for (const [key, value] of formPayload.entries()) {
+        console.log(`${key}:`, value);
+    }
+    const isUpdate = formData.employeeID && formData.employeeID > 0;
 
     $.ajax({
         url: isUpdate ? "EmpView/UpdateEmp" : "/EmpView/AddNewEmp",
         type: isUpdate ? "POST" : "POST",
-        data: JSON.stringify(employeeData),
-        contentType: "application/json",
+        data: formPayload,
+        processData: false, 
+        contentType: false,
         success: function (response) {
             alertify.success("Employee saved successfully!");
             $("#employeeADoPopup").dxPopup("instance").hide();

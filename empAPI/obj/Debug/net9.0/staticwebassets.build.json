@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "an7VEt2/YsUpZEuq9Vn8zWr7YxD12VuggiAqHBIQ0Pw=",
+  "Hash": "k98ZplnDnPymAOamYW/0T/2owGaNANGYGNWkhp61VNg=",
   "Source": "empAPI",
   "BasePath": "_content/empAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "empAPI\\wwwroot",
+      "Source": "empAPI",
+      "ContentRoot": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\",
+      "BasePath": "_content/empAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg",
+      "SourceId": "empAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\",
+      "BasePath": "_content/empAPI",
+      "RelativePath": "uploads/e3c85fa6-818c-4258-b036-483ef8f7b683#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "07zj6v2vbr",
+      "Integrity": "FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/e3c85fa6-818c-4258-b036-483ef8f7b683.07zj6v2vbr.jpeg",
+      "AssetFile": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 06:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "07zj6v2vbr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg",
+      "AssetFile": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\wwwroot\\uploads\\e3c85fa6-818c-4258-b036-483ef8f7b683.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 06:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ="
+        }
+      ]
+    }
+  ]
 }

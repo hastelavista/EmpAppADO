@@ -26,7 +26,8 @@ namespace DATA.Repo
                 EmployeeID = Convert.ToInt32(row["EmployeeID"]),
                 Company = row["Company"].ToString(),
                 Department = row["Department"].ToString(),
-                Years = row["Years"] != DBNull.Value ? (int?)Convert.ToInt32(row["Years"]) : null
+                Years = row["Years"] != DBNull.Value ? (int?)Convert.ToInt32(row["Years"]) : null,
+
             }).ToList();
         }
         public async Task<Employee> GetEmployeeByIdAsync(int id)
@@ -44,23 +45,24 @@ namespace DATA.Repo
                 Name = row["Name"].ToString(),
                 Age = Convert.ToInt32(row["Age"]),
                 Gender = row["Gender"].ToString(),
-                Contact = row["Contact"].ToString()
+                Contact = row["Contact"].ToString(),
+                ImagePath = row["ImagePath"] != DBNull.Value ? row["ImagePath"].ToString() : null
+
             };
         }
         public async Task<DataTable> GeEmployeeList()
         {
-            string query = @" SELECT  e.EmployeeID,  e.Age, e.Name, e.Gender, e.Contact,SUM(exp.Years) AS Years FROM [dbo].[Employees] AS e
-                            INNER JOIN   dbo.Experiences AS exp   ON exp.EmployeeID = e.EmployeeID GROUP BY   e.EmployeeID, e.Age, e.Name, e.Gender, e.Contact";
+            string query = @" SELECT  e.EmployeeID,  e.Age, e.Name, e.Gender, e.Contact, e.ImagePath,SUM(exp.Years) AS Years FROM [dbo].[Employees] AS e
+                            INNER JOIN   dbo.Experiences AS exp   ON exp.EmployeeID = e.EmployeeID GROUP BY   e.EmployeeID, e.Age, e.Name, e.Gender, e.Contact, e.ImagePath";
             var table = await _db.ExecuteDataTableAsync(query);
             return table;
 
         }
 
-
         //for C,U,D
         public async Task<int> InsertNewEmpExp(Employee employee, List<Experience> experiences)
         {
-            string empInsertQuery = @"INSERT INTO Employees (Name, Age, Gender, Contact)VALUES (@Name, @Age, @Gender, @Contact);
+            string empInsertQuery = @"INSERT INTO Employees (Name, Age, Gender, Contact, ImagePath)VALUES (@Name, @Age, @Gender, @Contact, @ImagePath);
                             SELECT SCOPE_IDENTITY();";
 
             SqlParameter[] empParams = new[]
@@ -69,6 +71,7 @@ namespace DATA.Repo
                 new SqlParameter("@Age", employee.Age),
                 new SqlParameter("@Gender", employee.Gender),
                 new SqlParameter("@Contact", employee.Contact),
+                new SqlParameter("@ImagePath", employee.ImagePath)
             };
             var result = await _db.ExecuteScalarAsync(empInsertQuery, empParams);
             int employeeId = Convert.ToInt32(result);

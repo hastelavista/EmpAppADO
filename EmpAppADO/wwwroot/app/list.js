@@ -42,6 +42,28 @@ function datagridinit() {
             { dataField: "contact" },
             { dataField: 'years' },
             {
+                dataField: 'imagePath',
+                caption: "Image",
+                cellTemplate: function (container, options) {
+                    const imageFileName = options.value;
+                    const imageUrl = imageFileName
+                        ? `/uploads/${imageFileName}`
+                        : `/uploads/defaultimage.jpg`;
+
+                    container.css({
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    });
+
+                    $("<img>")
+                        .attr("src", imageUrl)
+                        .attr("alt", "Employee Image")
+                        .css({ width: 50, height: 50, borderRadius: "50%" })
+                        .appendTo(container);
+                }
+            },                
+            {
                 type: "buttons",
                 buttons: [
                     {

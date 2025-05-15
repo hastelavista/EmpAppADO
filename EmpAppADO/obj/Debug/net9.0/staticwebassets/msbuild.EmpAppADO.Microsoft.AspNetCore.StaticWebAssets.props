@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>onysarxztv</Fingerprint>
-      <Integrity>jPsesq7ok8ni8LJpqP2vrfE6wCXTR2198/qBmurf/pY=</Integrity>
+      <Fingerprint>81mywoc6kj</Fingerprint>
+      <Integrity>DGQGzHcB1U8DBLnqBHvRknarPEUOdRfEhIJIJbelkcY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app\form.js'))</OriginalItemSpec>
@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>efmh73h3xn</Fingerprint>
-      <Integrity>NlFIF2GtYquOfVzlSm924Zn3PDeru9v7wzB1etCujL8=</Integrity>
+      <Fingerprint>q7ugjthy3w</Fingerprint>
+      <Integrity>Cuzgo4cy4uji7RTUlGIdcG4plHQcaSQENWM8te0wMIg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app\list.js'))</OriginalItemSpec>
@@ -33425,6 +33425,204 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\0d0263f7-752a-4894-847d-ac749bcf9cd5.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/0d0263f7-752a-4894-847d-ac749bcf9cd5.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\0d0263f7-752a-4894-847d-ac749bcf9cd5.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\0d112429-bb21-49be-95ef-47f67f66f665.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/0d112429-bb21-49be-95ef-47f67f66f665.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\0d112429-bb21-49be-95ef-47f67f66f665.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4be1c2f2-a22f-457c-aec5-1432d73b4f34.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/4be1c2f2-a22f-457c-aec5-1432d73b4f34.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4be1c2f2-a22f-457c-aec5-1432d73b4f34.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4f42fb49-50bb-4b74-a843-61e7f7438f6a.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/4f42fb49-50bb-4b74-a843-61e7f7438f6a.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4f42fb49-50bb-4b74-a843-61e7f7438f6a.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5b555ee1-0424-40cd-812d-a48a7201f230.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/5b555ee1-0424-40cd-812d-a48a7201f230.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5b555ee1-0424-40cd-812d-a48a7201f230.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6e4fad5e-8077-450f-92cf-ecf1c3a5bd01.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/6e4fad5e-8077-450f-92cf-ecf1c3a5bd01.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6e4fad5e-8077-450f-92cf-ecf1c3a5bd01.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8920b4ed-d178-44ad-bca4-364da1875e67.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/8920b4ed-d178-44ad-bca4-364da1875e67.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8920b4ed-d178-44ad-bca4-364da1875e67.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8ee9ef55-8916-4bc3-807e-a6920a48b16e.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/8ee9ef55-8916-4bc3-807e-a6920a48b16e.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8ee9ef55-8916-4bc3-807e-a6920a48b16e.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b0d894ba-813b-4a5a-bc35-1c4b036432bd.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/b0d894ba-813b-4a5a-bc35-1c4b036432bd.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b0d894ba-813b-4a5a-bc35-1c4b036432bd.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\deb7e042-d863-45d8-a0eb-dec4ed750908.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/deb7e042-d863-45d8-a0eb-dec4ed750908.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>07zj6v2vbr</Fingerprint>
+      <Integrity>FEUPkcXiVzDT4Z0vOIIzIH3tCQy0hOaLtg8ycEC1vPQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\deb7e042-d863-45d8-a0eb-dec4ed750908.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\defaultimage.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>EmpAppADO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EmpAppADO</BasePath>
+      <RelativePath>uploads/defaultimage.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8wxllen81c</Fingerprint>
+      <Integrity>KMRD4hmcXan123+HersjuQkIz9Tfv+gYXw0KfQjnplI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\defaultimage.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
