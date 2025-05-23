@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "EmpAppADO.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
       },
       {
         "Path": "..\\empAPI\\empAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
       }
     ]
   }

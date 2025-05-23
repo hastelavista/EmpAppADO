@@ -11,7 +11,7 @@ namespace EmpAppADO
         public HttpServiceHelper(HttpClient httpClient)
         {
             _http = httpClient;
-            _http.BaseAddress = new Uri("https://localhost:7167");
+            _http.BaseAddress = new Uri("https://localhost:44397");
         }
 
         public async Task<T> GetAsync<T>(string endpoint)

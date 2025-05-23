@@ -71,7 +71,7 @@ namespace DATA.Repo
                 new SqlParameter("@Age", employee.Age),
                 new SqlParameter("@Gender", employee.Gender),
                 new SqlParameter("@Contact", employee.Contact),
-                new SqlParameter("@ImagePath", employee.ImagePath)
+                new SqlParameter("@ImagePath", (object?)employee.ImagePath ?? DBNull.Value)
             };
             var result = await _db.ExecuteScalarAsync(empInsertQuery, empParams);
             int employeeId = Convert.ToInt32(result);
@@ -97,7 +97,7 @@ namespace DATA.Repo
         {
             //firstupdateemployee
             string updateEmployeeQuery = @"UPDATE Employees SET 
-                                    Name = @Name, Age = @Age, Gender = @Gender, Contact = @Contact 
+                                    Name = @Name, Age = @Age, Gender = @Gender, Contact = @Contact, ImagePath = @ImagePath 
                                    WHERE EmployeeID = @EmployeeID";
             SqlParameter[] empParams =
             {
@@ -106,6 +106,8 @@ namespace DATA.Repo
                         new SqlParameter("@Age", employee.Age),
                         new SqlParameter("@Gender", employee.Gender),
                         new SqlParameter("@Contact", employee.Contact),
+                        new SqlParameter("@ImagePath", (object?)employee.ImagePath ?? DBNull.Value)
+
                     };
             await _db.ExecuteNonQueryAsync(updateEmployeeQuery, empParams);
 
