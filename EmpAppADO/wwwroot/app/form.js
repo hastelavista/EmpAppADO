@@ -68,7 +68,8 @@ function updateImagePreview(imagePath) {
     const $removeButton = $("#remove-photo-btn");
 
     if (currentFormMode === 'edit' && imagePath) {
-        const imageUrl = imagePath.startsWith("/uploads/") ? imagePath : `/uploads/${imagePath}`;
+        const fileName = imagePath.startsWith("/uploads/") ? imagePath.replace("/uploads/", "") : imagePath;
+        const imageUrl = `/uploads/${fileName}`;
         $imagePreview.attr("src", imageUrl).show();
         $removeButton.show();
     } else if (currentFormMode === 'add') {
@@ -213,7 +214,7 @@ function createPhotoSection(itemElement) {
         .attr("id", "remove-photo-btn")
         .css("display", currentFormMode === 'add' ? "none" : "block",)
         .dxButton({
-            text: "Remove Photo",
+            text: "Remove",
             type: "normal",
             stylingMode: "outlined",
             onClick: removePhoto
@@ -326,6 +327,10 @@ function saveEmployeeForm() {
         return;
     }
 
+    if (formData.imagePath && formData.imagePath.startsWith("/uploads/")) {
+        formData.imagePath = formData.imagePath.replace("/uploads/", "");
+    }
+
     const fileUploader = $("#file-uploader").dxFileUploader("instance");
     const file = fileUploader.option("value")[0];
 
@@ -335,8 +340,14 @@ function saveEmployeeForm() {
     Object.keys(formData).forEach(key => {
         if (formData[key] !== null && formData[key] !== undefined) {
             formPayload.append(`Employee.${key}`, formData[key]);
-        }
+
+        }     
     });
+
+    // Add file if selected
+    if (file) {
+        formPayload.append("ImageFile", file);
+    }
 
     // Add experience data
     experienceList.forEach((exp, index) => {
@@ -347,13 +358,10 @@ function saveEmployeeForm() {
         });
     });
 
-    // Add file if selected
-    if (file) {
-        formPayload.append("ImageFile", file);
-    }
+
 
     const isUpdate = currentFormMode === 'edit';
-    const url = isUpdate ? "EmpView/UpdateEmp" : "/EmpView/AddNewEmp";
+    const url = isUpdate ? "/EmpView/UpdateEmp" : "/EmpView/AddNewEmp";
     const successMessage = isUpdate ? "Employee updated successfully!" : "Employee added successfully!";
 
     $.ajax({
@@ -419,7 +427,7 @@ function showExperiencePopup() {
                 label: { text: "Years of Experience" },
                 editorType: "dxNumberBox",
                 editorOptions: { min: 0, step: 0.5 },
-                validationRules: [{ type: "required" }]
+                //validationRules: [{ type: "required" }]
             }
         ]
     });
@@ -447,7 +455,7 @@ function showExperiencePopup() {
                         const formInstance = $("#experienceForm").dxForm("instance");
                         const data = formInstance.option("formData");
 
-                        if (!data.company?.trim() || !data.department?.trim() || data.years <= 0) {
+                        if (!data.company?.trim() || !data.department?.trim() || data.years < 0) {
                             alertify.error("Please fill all required fields correctly.");
                             return;
                         }

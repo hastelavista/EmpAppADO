@@ -13,7 +13,9 @@ namespace DATA.Repo
             _db = db;
         }
 
+       
 
+        #region EMPREPO
         //for retrieval and display (read)
         public async Task<List<Experience>> GetExperiencesByEmployeeIdAsync(int id)
         {
@@ -182,5 +184,7 @@ namespace DATA.Repo
             string delEmpQuery = "DELETE FROM EMPLOYEES WHERE EmployeeID = @EmployeeID";
             await _db.ExecuteNonQueryAsync(delEmpQuery, empParams);
         }
+
+        #endregion
     }
 }

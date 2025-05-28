@@ -3,22 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\uicontroller\\empviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:uicontroller\\empviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E15FE7E-AD3D-4E1F-A2BD-CF05179137B8}|..\\empAPI\\empAPI.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empapi\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DCF8D1-168B-45C8-B3D2-C9809DC55341}|..\\DATA\\DATA.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\data\\repo\\emprepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\wwwroot\\app\\form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:wwwroot\\app\\form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\wwwroot\\app\\list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:wwwroot\\app\\list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\views\\empview\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:views\\empview\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\uicontroller\\empviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:uicontroller\\empviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\uicontroller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:uicontroller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\httpservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:httpservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|c:\\users\\nihar\\onedrive\\desktop\\empapi_ui_data\\empappado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBDBD0F-DF8E-4934-B528-5C925C249EC1}|EmpAppADO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,73 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "form.js",
               "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\form.js",
               "RelativeDocumentMoniker": "wwwroot\\app\\form.js",
               "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\form.js",
               "RelativeToolTip": "wwwroot\\app\\form.js",
-              "ViewState": "AgIAAEEBAAAAAAAAAAAmwFsBAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAewBUBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-23T04:31:22.17Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "list.js",
-              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\list.js",
-              "RelativeDocumentMoniker": "wwwroot\\app\\list.js",
-              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\list.js",
-              "RelativeToolTip": "wwwroot\\app\\list.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-23T04:34:30.183Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmpViewController.cs",
-              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\EmpViewController.cs",
-              "RelativeDocumentMoniker": "UIController\\EmpViewController.cs",
-              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\EmpViewController.cs",
-              "RelativeToolTip": "UIController\\EmpViewController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAtwDsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T06:00:29.629Z",
+              "WhenOpened": "2025-05-28T07:49:44.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmpController.cs",
-              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\Controllers\\EmpController.cs",
-              "RelativeDocumentMoniker": "..\\empAPI\\Controllers\\EmpController.cs",
-              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\empAPI\\Controllers\\EmpController.cs",
-              "RelativeToolTip": "..\\empAPI\\Controllers\\EmpController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wEEAAAAJAAAAAAAAAA==",
+              "Title": "list.js",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\list.js",
+              "RelativeDocumentMoniker": "wwwroot\\app\\list.js",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\wwwroot\\app\\list.js",
+              "RelativeToolTip": "wwwroot\\app\\list.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T07:46:47.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HttpServiceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\HttpServiceHelper.cs",
+              "RelativeDocumentMoniker": "HttpServiceHelper.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\HttpServiceHelper.cs",
+              "RelativeToolTip": "HttpServiceHelper.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwEAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T10:05:53.457Z",
+              "WhenOpened": "2025-05-28T07:34:14.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\AccountController.cs",
+              "RelativeDocumentMoniker": "UIController\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\AccountController.cs",
+              "RelativeToolTip": "UIController\\AccountController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:28:36.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpViewController.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\EmpViewController.cs",
+              "RelativeDocumentMoniker": "UIController\\EmpViewController.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\UIController\\EmpViewController.cs",
+              "RelativeToolTip": "UIController\\EmpViewController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAmwIcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:28:42.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmpRepo.cs",
-              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\DATA\\Repo\\EmpRepo.cs",
-              "RelativeDocumentMoniker": "..\\DATA\\Repo\\EmpRepo.cs",
-              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\DATA\\Repo\\EmpRepo.cs",
-              "RelativeToolTip": "..\\DATA\\Repo\\EmpRepo.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAwwJcAAAARAAAAAAAAAA==",
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\Views\\EmpView\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\EmpView\\List.cshtml",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\Views\\EmpView\\List.cshtml",
+              "RelativeToolTip": "Views\\EmpView\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T07:27:59.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\nihar\\OneDrive\\Desktop\\EmpAPI_UI_DATA\\EmpAppADO\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T10:06:11.198Z",
+              "WhenOpened": "2025-05-28T07:27:32.428Z",
               "EditorCaption": ""
             }
           ]

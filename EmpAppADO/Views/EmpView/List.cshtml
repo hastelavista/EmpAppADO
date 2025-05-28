@@ -13,6 +13,16 @@
 <div id="experienceADoPopupContainer"></div>
 
 
+@{
+    var token = Context.Session.GetString("JWToken");
+    bool isAdmin = EmpAppADO.HttpServiceHelper.JwtHelper.IsAdmin(token);
+   
+}
+
+<script>
+    window.isAdminUser = @isAdmin.ToString().ToLower();
+</script>
+
 
 @section Scripts {
 	<script src="~/app/form.js"></script>

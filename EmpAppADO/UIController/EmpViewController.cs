@@ -1,9 +1,14 @@
 ﻿using EmpAppADO.Services;
 using EmpAppADO.UIModel;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace EmpAppADO.UIController
 {
+    [Authorize]
+
     public class EmpViewController : Controller
 
     {
@@ -25,7 +30,6 @@ namespace EmpAppADO.UIController
 
                 return uniqueFileName;
             }
-
             return null;
         }
 
@@ -43,14 +47,20 @@ namespace EmpAppADO.UIController
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var employees = await _apiService.GetAllEmployeesAsync();
+            string? token = HttpContext.Session.GetString("JWToken");
+            if (string.IsNullOrEmpty(token))
+                return Unauthorized(new { message = "Access denied. Please log in." });
+            
+            var employees = await _apiService.GetAllEmployeesAsync(token);
             return Json(employees);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            var emp = await _apiService.GetEmployeesAsyncByID(id);
+            string? token = HttpContext.Session.GetString("JWToken");
+
+            var emp = await _apiService.GetEmployeesAsyncByID(id, token ?? "");
 
             if (!string.IsNullOrEmpty(emp.Employee.ImagePath))
             {
@@ -114,21 +124,24 @@ namespace EmpAppADO.UIController
         [HttpPost]
         public async Task<IActionResult> AddNewEmp(EmpExpForm model)
         {
+            string? token = HttpContext.Session.GetString("JWToken");
+
             model.Employee.ImagePath = await SaveImageAsync(model.ImageFile);
 
-            var response = await _apiService.AddNewEmpAsync(model);
+            var response = await _apiService.AddNewEmpAsync(model, token ?? "");
             return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> UpdateEmp(EmpExpForm model)
         {
+            string? token = HttpContext.Session.GetString("JWToken");
+
             if (model.ImageFile != null && model.ImageFile.Length > 0)
             {
                 model.Employee.ImagePath = await SaveImageAsync(model.ImageFile);
             }
-
-            var response = await _apiService.UpdateEmpAsync(model);
+            var response = await _apiService.UpdateEmpAsync(model, token ?? "");
             return Ok();
         }
 
@@ -136,7 +149,9 @@ namespace EmpAppADO.UIController
         [HttpDelete]
         public async Task<IActionResult> DeleteEmp(int id)
         {
-            var response = await _apiService.DeleteEmpAsync(id);
+            string? token = HttpContext.Session.GetString("JWToken");            
+            var response = await _apiService.DeleteEmpAsync(id, token ?? "");
+
             return Ok();
         }
     }

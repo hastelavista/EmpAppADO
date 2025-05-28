@@ -6,7 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-
+	<PropertyGroup>
+		<UseBrowserLink>false</UseBrowserLink>
+	</PropertyGroup>
 
 	<ItemGroup>
     <ProjectReference Include="..\empAPI\empAPI.csproj" />

@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DATA.Repo;
 using EmpAppADO.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmpAppADO.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class EmpController : Controller
@@ -15,12 +17,13 @@ namespace EmpAppADO.Controllers
         }
 
 
+        
+
         [HttpGet("all")]
         public async Task<IActionResult> ListEmployees()
         {
             var result = await _repo.GeEmployeeList();
             return Ok(result);
-
         }
 
         [HttpGet("{id?}")]
@@ -52,6 +55,10 @@ namespace EmpAppADO.Controllers
         [HttpPost("add")]
         public async Task<IActionResult> InsertNewEmpExp([FromBody] EmpExpFormView model)
         {
+            var isAdmin = User.Claims.FirstOrDefault(c => c.Type == "IsAdmin")?.Value;
+            if (isAdmin != "true")
+                return StatusCode(StatusCodes.Status403Forbidden, "Not Authorized");
+
             int employeeId = await _repo.InsertNewEmpExp(model.Employee, model.Experiences);
             return Ok(new { Message = "Employee inserted successfully.", EmployeeID = employeeId });
         }
@@ -59,8 +66,11 @@ namespace EmpAppADO.Controllers
         [HttpPost("update")]
         public async Task<IActionResult> UpdateEmpExp([FromBody] EmpExpFormView model)
         {
-            if (model == null) return BadRequest("Invalid data.");
+            var isAdmin = User.Claims.FirstOrDefault(c => c.Type == "IsAdmin")?.Value;
+            if (isAdmin != "true")
 
+                return StatusCode(StatusCodes.Status403Forbidden, "Not Authorized");
+            if (model == null) return BadRequest("Invalid data.");
             await _repo.UpdateEmployeeWithExperiences(model.Employee, model.Experiences);
             return Ok();
         }
@@ -68,8 +78,14 @@ namespace EmpAppADO.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
+            var isAdmin = User.Claims.FirstOrDefault(c => c.Type == "IsAdmin")?.Value;
+            if (isAdmin != "true")
+
+                return StatusCode(StatusCodes.Status403Forbidden, "Not Authorized");
             await _repo.DeleteEmpExpByID(id);
             return Ok();
         }
+
+
     }
 }

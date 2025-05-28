@@ -1,6 +1,12 @@
 ﻿var EmployeeList = [];
 var dataGrid;
 
+if (window.isAdminUser) {
+    console.log("User is admin");
+} else {
+    console.log("User is NOT admin");
+}
+
 // Load employee list from server
 function loadEmployee(onSuccess) {
     $.ajax({
@@ -32,7 +38,7 @@ function loadEmployee(onSuccess) {
 // Handle edit employee
 function editEmployee(employeeId) {
     $.ajax({
-        url: `EmpView/GetById/${employeeId}`,
+        url: `/EmpView/GetById/${employeeId}`,
         type: 'GET',
         success: function (response) {
             console.log("Edit employee data:", response);
@@ -53,7 +59,7 @@ function deleteEmployee(employeeId) {
         "Are you sure you want to delete this employee?",
         function () {
             $.ajax({
-                url: `EmpView/DeleteEmp/${employeeId}`,
+                url: `/EmpView/DeleteEmp/${employeeId}`,
                 type: 'DELETE',
                 success: function () {
                     alertify.success("Employee deleted successfully");
@@ -78,15 +84,8 @@ function deleteEmployee(employeeId) {
 
 // Initialize datagrid
 function datagridinit() {
-    dataGrid = $("#dataGrid").dxDataGrid({
-        dataSource: EmployeeList,
-        keyExpr: "employeeID",
-        columnFixing: { enabled: true },
-        showBorders: true,
-        width: null,
-        rowAlternationEnabled: true,
-        hoverStateEnabled: true,
-        columns: [
+
+        var columns = [
             {
                 dataField: "name",
                 caption: "Name",
@@ -157,11 +156,13 @@ function datagridinit() {
                         })
                         .appendTo(container);
                 }
-            },
-            {
+            }
+        ];
+            
+        if (window.isAdminUser) {
+            columns.push({
                 type: "buttons",
                 caption: "Actions",
-                //width: 120,
                 buttons: [
                     {
                         hint: "Edit Employee",
@@ -180,66 +181,72 @@ function datagridinit() {
                         }
                     }
                 ]
-            }
-        ],
-        filterRow: { visible: true },
-        searchPanel: {
-            visible: true,
-            width: 240,
-            placeholder: "Search employees..."
-        },
-        groupPanel: { visible: true },
-        allowColumnReordering: true,
-        allowColumnResizing: true,
-        columnAutoWidth: true,
-        selection: { mode: "single" },
-        paging: {
-            pageSize: 20
-        },
-        pager: {
-            showPageSizeSelector: true,
-            allowedPageSizes: [10, 20, 50, 100],
-            showInfo: true
-        },
-
-        // Add toolbar with add button
-        onToolbarPreparing: function (e) {
-            e.toolbarOptions.items.unshift({
-                location: "after",
-                widget: "dxButton",
-                options: {
-                    icon: "add",
-                    hint: "Add Employee",
-                    type: "success",
-                    stylingMode: "contained",
-                    onClick: function () {
-                        // Use the centralized form initialization with add mode
-                        initializeEmployeeForm('add');
-                    }
-                }
             });
-
-            //// Add refresh button
-            //e.toolbarOptions.items.push({
-            //    location: "after",
-            //    widget: "dxButton",
-            //    options: {
-            //        icon: "refresh",
-            //        hint: "Refresh",
-            //        onClick: function () {
-            //            loadEmployee();
-            //        }
-            //    }
-            //});
-        },
-
-        // Handle row events
-        onRowPrepared: function (e) {
-            if (e.rowType === "data") {
-                e.rowElement.css("cursor", "pointer");
-            }
         }
-    }).dxDataGrid("instance");
+    
+    
+        dataGrid = $("#dataGrid").dxDataGrid({
+            dataSource: EmployeeList,
+            keyExpr: "employeeID",
+            showBorders: true,
+            hoverStateEnabled: true,
+            rowAlternationEnabled: true,
+            columnFixing: { enabled: true },
+            columns: columns,
+            filterRow: { visible: true },
+            searchPanel: {
+                visible: true,
+                width: 240,
+                placeholder: "Search employees..."
+            },
+            groupPanel: { visible: true },
+            allowColumnReordering: true,
+            allowColumnResizing: true,
+            columnAutoWidth: true,
+            selection: { mode: "single" },
+            paging: {
+                pageSize: 20
+            },
+            pager: {
+                showPageSizeSelector: true,
+                allowedPageSizes: [10, 20, 50, 100],
+                showInfo: true
+            },
+            onToolbarPreparing: function (e) {
+                if (window.isAdminUser) {
+                    e.toolbarOptions.items.unshift({
+                        location: "after",
+                        widget: "dxButton",
+                        options: {
+                            icon: "add",
+                            hint: "Add Employee",
+                            type: "success",
+                            stylingMode: "contained",
+                            onClick: function () {
+                                initializeEmployeeForm('add');
+                            }
+                        }
+                    });
+                }
+
+                e.toolbarOptions.items.push({
+                    location: "after",
+                    widget: "dxButton",
+                    options: {
+                        icon: "refresh",
+                        hint: "Refresh",
+                        onClick: function () {
+                            loadEmployee();
+                        }
+                    }
+                });
+            },
+            onRowPrepared: function (e) {
+                if (e.rowType === "data") {
+                    e.rowElement.css("cursor", "pointer");
+                }
+            }
+        }).dxDataGrid("instance");
 }
 
 // Initialize application
@@ -253,12 +260,3 @@ $(function () {
     });
 });
 
-//// Utility function to refresh the employee list
-//function refreshEmployeeList() {
-//    loadEmployee(function () {
-//        if (dataGrid) {
-//            dataGrid.option("dataSource", EmployeeList);
-//            dataGrid.refresh();
-//        }
-//    });
-//}

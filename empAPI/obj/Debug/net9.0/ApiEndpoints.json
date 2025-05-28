@@ -72,5 +72,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "empAPI.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DATA.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "empAPI.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

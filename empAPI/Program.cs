@@ -1,5 +1,8 @@
 using DATA.Repo;
 using DATA;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +16,33 @@ builder.Services.AddControllers()
     });
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer abcdefgh12345\"",
+    });
+
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 
 builder.Services.AddScoped<DATA.DbContext>(provider =>
@@ -22,6 +51,8 @@ builder.Services.AddScoped<DATA.DbContext>(provider =>
     return new DbContext(config);
 });
 builder.Services.AddScoped<IEmpRepo, EmpRepo>();
+builder.Services.AddScoped<IUserRepo, UserRepo>();
+
 
 //builder.Services.AddCors(options =>
 //{
@@ -31,6 +62,27 @@ builder.Services.AddScoped<IEmpRepo, EmpRepo>();
 //            policy.WithOrigins("https://localhost:7272").AllowAnyHeader().AllowAnyMethod();
 //        });
 //});
+
+
+var jwtKey = builder.Configuration["JwtSettings:Key"];
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false, 
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+    };
+});
+
+builder.Services.AddAuthorization();
 
 
 var app = builder.Build();
@@ -51,6 +103,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -3743,6 +3743,7 @@ C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\EmpAppADO.g
 C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\ref\EmpAppADO.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.deps.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.runtimeconfig.json
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.staticwebassets.runtime.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.staticwebassets.endpoints.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.exe
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\appsettings.Development.json
@@ -3756,6 +3757,9 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\EmpApp
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\EmpAppADO.pdb
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.Bcl.Cryptography.dll
@@ -3779,6 +3783,7 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Micros
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -5620,9 +5625,5 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\refint
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.pdb
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.genruntimeconfig.cache
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\ref\EmpAppADO.dll
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.staticwebassets.runtime.json
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\wj2nfl0tej-fnbil28fen.gz
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\6gm4q5sgb8-6023g7mn0o.gz
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\wj2nfl0tej-3gmnxl6mmu.gz
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\6gm4q5sgb8-fnolcmnahe.gz

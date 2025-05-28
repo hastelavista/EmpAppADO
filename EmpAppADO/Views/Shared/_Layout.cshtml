@@ -28,6 +28,18 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="EmpView" asp-action="List">Employee List</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="form-inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-danger" title="Logout">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </nav>
