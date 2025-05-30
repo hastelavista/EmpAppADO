@@ -13,31 +13,29 @@ namespace EmpAppADO.Services
             _httpHelper = httpHelper;
         }
 
-        public async Task<List<Dictionary<string, object>>> GetAllEmployeesAsync(string token)
+        public async Task<List<Dictionary<string, object>>> GetAllEmployeesAsync()
         {
-            return await _httpHelper.GetAsync<List<Dictionary<string, object>>>("/api/Emp/all", token);
+            return await _httpHelper.GetAsync<List<Dictionary<string, object>>>("/api/Emp/all");
         }
 
-        public async Task<EmpExpForm> GetEmployeesAsyncByID(int id, string token)
+        public async Task<EmpExpForm> GetEmployeesAsyncByID(int id)
         {
-            return await _httpHelper.GetAsync<EmpExpForm>($"/api/Emp/{id}", token);
+            return await _httpHelper.GetAsync<EmpExpForm>($"/api/Emp/{id}");
         }
 
-        public async Task<HttpResponseMessage> AddNewEmpAsync(EmpExpForm model, string token)
+        public async Task<HttpResponseMessage> AddNewEmpAsync(EmpExpForm model)
         {
-            return await _httpHelper.PostAsync("/api/Emp/add", model, token);
+            return await _httpHelper.PostAsync("/api/Emp/add", model);
         }
 
-        public async Task<HttpResponseMessage> UpdateEmpAsync(EmpExpForm model, string token)
+        public async Task<HttpResponseMessage> UpdateEmpAsync(EmpExpForm model)
         {
-            return await _httpHelper.PostAsync("/api/Emp/update", model, token);
+            return await _httpHelper.PostAsync("/api/Emp/update", model);
         }
 
-        public async Task<HttpResponseMessage> DeleteEmpAsync(int id, string token)
+        public async Task<HttpResponseMessage> DeleteEmpAsync(int id)
         {
-            return await _httpHelper.DeleteAsync($"/api/Emp/{id}", token);
+            return await _httpHelper.DeleteAsync($"/api/Emp/{id}");
         }
-
     }
 }
-

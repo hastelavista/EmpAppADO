@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fnolcmnahe</Fingerprint>
-      <Integrity>9ftQdCPRuyu/bC5AQpQ7WMsFV9VTLImANMekLIsRFEY=</Integrity>
+      <Fingerprint>191jt7ssko</Fingerprint>
+      <Integrity>6/nnvZQIg+SE7Udk5h0C9S5JzofMOPJeVGZhodmr0/g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app\form.js'))</OriginalItemSpec>

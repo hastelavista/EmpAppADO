@@ -3741,6 +3741,7 @@ C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\refint\EmpA
 C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\EmpAppADO.pdb
 C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\EmpAppADO.genruntimeconfig.cache
 C:\Users\nihar\OneDrive\Desktop\EmpAppADO\EmpAppADO\obj\Debug\net9.0\ref\EmpAppADO.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\lxxsm2pr4r-ajnzwok3s4.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.deps.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.runtimeconfig.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\bin\Debug\net9.0\empAPI.staticwebassets.runtime.json
@@ -3831,6 +3832,8 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpApp
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\scopedcss\bundle\EmpAppADO.styles.css
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\scopedcss\projectbundle\EmpAppADO.bundle.scp.css
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\6gm4q5sgb8-191jt7ssko.gz
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\wj2nfl0tej-3gmnxl6mmu.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\e5ujl5jx47-b9sayid5wm.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\ju3d9s2z3q-61n19gt1b8.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\aygzgxbbz3-xtxxf3hu2r.gz
@@ -4936,7 +4939,6 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compre
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\26m6gvmcj0-97pah4f7eq.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\vub2hntk28-ypf2pcx34p.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\f94seeu9ve-rm9obxr9bs.gz
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\lxxsm2pr4r-ajnzwok3s4.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\kyf8ggcc4h-ul1m05bf4g.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\j323ff5eem-eglzd2zvda.gz
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\5eq2vo3i8a-891l955tqa.gz
@@ -5625,5 +5627,3 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\refint
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.pdb
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.genruntimeconfig.cache
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\ref\EmpAppADO.dll
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\wj2nfl0tej-3gmnxl6mmu.gz
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compressed\6gm4q5sgb8-fnolcmnahe.gz

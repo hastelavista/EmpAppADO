@@ -5,24 +5,26 @@ using EmpAppADO.UIModel;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
+using EmpAppADO.Services;
 
 namespace EmpAppADO.UIController
 {
     public class AccountController : Controller
     {
         private readonly HttpServiceHelper _httpService;
+        private readonly ITokenService _tokenService;
 
-        public AccountController(HttpServiceHelper httpService)
+        public AccountController(HttpServiceHelper httpService, ITokenService tokenService)
         {
             _httpService = httpService;
+            _tokenService = tokenService;
         }
 
 
         public IActionResult Login()
         {
-            return View("login");
+            return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -30,17 +32,18 @@ namespace EmpAppADO.UIController
         {
             try
             {
-                var response = await _httpService.PostAsync("api/Login/login", model);
+                var response = await _httpService.PostWithoutAuth("api/Login/login", model);
                 var json = await response.Content.ReadAsStringAsync();
                 var tokenObject = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
 
                 if (tokenObject != null && tokenObject.TryGetValue("token", out var token))
                 {
-                    HttpContext.Session.SetString("JWToken", token);
+                    // Use centralized token service
+                    await _tokenService.SetTokenAsync(token);
 
                     var claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.Name, model.username)
+                    new Claim(ClaimTypes.Name, model.username)
                     };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -71,9 +74,8 @@ namespace EmpAppADO.UIController
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            HttpContext.Session.Clear();
+            await _tokenService.ClearTokenAsync();
             return RedirectToAction("login", "Account");
         }
-
     }
 }

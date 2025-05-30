@@ -10,7 +10,6 @@ namespace EmpAppADO.UIController
     [Authorize]
 
     public class EmpViewController : Controller
-
     {
         private async Task<string?> SaveImageAsync(IFormFile? imageFile)
         {
@@ -34,6 +33,7 @@ namespace EmpAppADO.UIController
         }
 
         private readonly APICallService _apiService;
+
         public EmpViewController(APICallService apiService)
         {
             _apiService = apiService;
@@ -44,23 +44,18 @@ namespace EmpAppADO.UIController
             return View();
         }
 
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            string? token = HttpContext.Session.GetString("JWToken");
-            if (string.IsNullOrEmpty(token))
-                return Unauthorized(new { message = "Access denied. Please log in." });
-            
-            var employees = await _apiService.GetAllEmployeesAsync(token);
+            var employees = await _apiService.GetAllEmployeesAsync();
             return Json(employees);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            string? token = HttpContext.Session.GetString("JWToken");
-
-            var emp = await _apiService.GetEmployeesAsyncByID(id, token ?? "");
+            var emp = await _apiService.GetEmployeesAsyncByID(id);
 
             if (!string.IsNullOrEmpty(emp.Employee.ImagePath))
             {
@@ -69,89 +64,29 @@ namespace EmpAppADO.UIController
             return Ok(emp);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> AddNewEmp( EmpExpForm model)
-        // {
-        //    // Save image to server
-        //    string? imagePath = null;
-        //    if (model.ImageFile != null && model.ImageFile.Length > 0)
-        //    {
-        //        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-        //        if (!Directory.Exists(uploadsFolder))
-        //            Directory.CreateDirectory(uploadsFolder);
-
-        //        var uniqueFileName = Guid.NewGuid() + Path.GetExtension(model.ImageFile.FileName);
-        //        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-        //        using (var stream = new FileStream(filePath, FileMode.Create))
-        //        {
-        //            await model.ImageFile.CopyToAsync(stream);
-        //        }
-
-        //        imagePath = uniqueFileName;
-        //    }
-
-        //    model.Employee.ImagePath = imagePath;
-
-        //    var response = await _apiService.AddNewEmpAsync(model);
-        //    return Ok();
-        //}
-
-        //[HttpPost]
-        //public async Task<IActionResult> UpdateEmp(EmpExpForm model)
-        //{
-        //    if (model.ImageFile != null && model.ImageFile.Length > 0)
-        //    {
-        //        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-        //        if (!Directory.Exists(uploadsFolder))
-        //            Directory.CreateDirectory(uploadsFolder);
-
-        //        var uniqueFileName = Guid.NewGuid() + Path.GetExtension(model.ImageFile.FileName);
-        //        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-        //        using (var stream = new FileStream(filePath, FileMode.Create))
-        //        {
-        //            await model.ImageFile.CopyToAsync(stream);
-        //        }
-
-        //        model.Employee.ImagePath = uniqueFileName;
-        //    }
-
-        //    var response = await _apiService.UpdateEmpAsync(model);
-        //    return Ok();
-        //}
-
         [HttpPost]
         public async Task<IActionResult> AddNewEmp(EmpExpForm model)
         {
-            string? token = HttpContext.Session.GetString("JWToken");
-
             model.Employee.ImagePath = await SaveImageAsync(model.ImageFile);
-
-            var response = await _apiService.AddNewEmpAsync(model, token ?? "");
+            var response = await _apiService.AddNewEmpAsync(model);
             return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> UpdateEmp(EmpExpForm model)
         {
-            string? token = HttpContext.Session.GetString("JWToken");
-
             if (model.ImageFile != null && model.ImageFile.Length > 0)
             {
                 model.Employee.ImagePath = await SaveImageAsync(model.ImageFile);
             }
-            var response = await _apiService.UpdateEmpAsync(model, token ?? "");
+            var response = await _apiService.UpdateEmpAsync(model);
             return Ok();
         }
-
 
         [HttpDelete]
         public async Task<IActionResult> DeleteEmp(int id)
         {
-            string? token = HttpContext.Session.GetString("JWToken");            
-            var response = await _apiService.DeleteEmpAsync(id, token ?? "");
-
+            var response = await _apiService.DeleteEmpAsync(id);
             return Ok();
         }
     }
