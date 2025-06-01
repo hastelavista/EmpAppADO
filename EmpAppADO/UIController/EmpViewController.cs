@@ -11,6 +11,16 @@ namespace EmpAppADO.UIController
 
     public class EmpViewController : Controller
     {
+
+
+        private readonly APICallService _apiService;
+
+        public EmpViewController(APICallService apiService)
+        {
+            _apiService = apiService;
+        }
+
+
         private async Task<string?> SaveImageAsync(IFormFile? imageFile)
         {
             if (imageFile != null && imageFile.Length > 0)
@@ -32,13 +42,7 @@ namespace EmpAppADO.UIController
             return null;
         }
 
-        private readonly APICallService _apiService;
-
-        public EmpViewController(APICallService apiService)
-        {
-            _apiService = apiService;
-        }
-
+        
         public IActionResult List()
         {
             return View();

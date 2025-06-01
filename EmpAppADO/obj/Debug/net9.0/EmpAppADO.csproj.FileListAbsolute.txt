@@ -5614,12 +5614,6 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\compre
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets\msbuild.EmpAppADO.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets\msbuild.EmpAppADO.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets\msbuild.build.EmpAppADO.props
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.EmpAppADO.props
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.EmpAppADO.props
-C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.csproj.Up2Date
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.dll
@@ -5627,3 +5621,4 @@ C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\refint
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.pdb
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\EmpAppADO.genruntimeconfig.cache
 C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\ref\EmpAppADO.dll
+C:\Users\nihar\OneDrive\Desktop\EmpAPI_UI_DATA\EmpAppADO\obj\Debug\net9.0\staticwebassets.build.json.cache

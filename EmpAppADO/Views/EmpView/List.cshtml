@@ -1,5 +1,4 @@
-﻿@inject EmpAppADO.Services.ITokenService TokenService
-
+﻿
 
 
 <div class="card card-primary card-outline">
@@ -18,7 +17,8 @@
 
 
 @{
-    var isAdmin = await TokenService.IsUserAdminAsync();
+    var isAdminClaim = User.Claims.FirstOrDefault(c => c.Type == "IsAdmin")?.Value;
+    var isAdmin = string.Equals(isAdminClaim, "true", StringComparison.OrdinalIgnoreCase);
 }
 
 <script>

@@ -11,20 +11,20 @@ namespace EmpAppADO.Services
     public class HttpServiceHelper
     {
         private readonly HttpClient _http;
-        private readonly ITokenService _tokenService;
+        private readonly ISessionCookieHelper _sessionHelper;
         private readonly ILogger<HttpServiceHelper> _logger;
 
-        public HttpServiceHelper(HttpClient httpClient, ITokenService tokenService, ILogger<HttpServiceHelper> logger)
+        public HttpServiceHelper(HttpClient httpClient, ISessionCookieHelper sessionHelper, ILogger<HttpServiceHelper> logger)
         {
             _http = httpClient;
-            _tokenService = tokenService;
+            _sessionHelper = sessionHelper;
             _logger = logger;
             _http.BaseAddress = new Uri("https://localhost:44397");
         }
 
         private async Task SetAuthorizationHeaderAsync()
         {
-            var token = await _tokenService.GetTokenAsync();
+            var token = await _sessionHelper.GetTokenAsync();
             if (!string.IsNullOrEmpty(token))
             {
                 _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
@@ -45,7 +45,7 @@ namespace EmpAppADO.Services
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    await _tokenService.ClearTokenAsync();
+                    await _sessionHelper.ClearTokenAsync();
                     throw new UnauthorizedAccessException("Token has expired or is invalid");
                 }
 
@@ -77,7 +77,7 @@ namespace EmpAppADO.Services
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    await _tokenService.ClearTokenAsync();
+                    await _sessionHelper.ClearTokenAsync();
                     throw new UnauthorizedAccessException("Token has expired or is invalid");
                 }
 
@@ -101,7 +101,7 @@ namespace EmpAppADO.Services
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    await _tokenService.ClearTokenAsync();
+                    await _sessionHelper.ClearTokenAsync();
                     throw new UnauthorizedAccessException("Token has expired or is invalid");
                 }
 

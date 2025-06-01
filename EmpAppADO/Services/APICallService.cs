@@ -13,6 +13,24 @@ namespace EmpAppADO.Services
             _httpHelper = httpHelper;
         }
 
+        #region Account
+
+        public async Task<string?> Login(LoginModel model)
+        {
+            var response = await _httpHelper.PostWithoutAuth("api/Login/login", model);
+            if (!response.IsSuccessStatusCode) return null;
+
+            var json = await response.Content.ReadAsStringAsync();
+            var tokenObj = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            return tokenObj != null && tokenObj.TryGetValue("token", out var token) ? token : null;
+        }
+
+
+        #endregion
+
+
+        #region Employee
+
         public async Task<List<Dictionary<string, object>>> GetAllEmployeesAsync()
         {
             return await _httpHelper.GetAsync<List<Dictionary<string, object>>>("/api/Emp/all");
@@ -37,5 +55,8 @@ namespace EmpAppADO.Services
         {
             return await _httpHelper.DeleteAsync($"/api/Emp/{id}");
         }
+
+
+        #endregion
     }
 }

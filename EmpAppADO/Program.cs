@@ -1,3 +1,4 @@
+using EmpAppADO;
 using EmpAppADO.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -18,13 +19,17 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/Account/Login";
         options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        options.SlidingExpiration = true;
     });
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient<HttpServiceHelper>();
-builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<ISessionCookieHelper, SessionCookieHelper>();
 builder.Services.AddScoped<APICallService>();
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<UnauthorizedRedirectFilter>();
+});
 
 var app = builder.Build();
 
